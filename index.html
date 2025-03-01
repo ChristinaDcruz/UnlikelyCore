@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlikely Core</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-black"></div>
+        <div class="header-red"></div>
+        <div class="logo-section">
+            <div class="logo-circle">
+                <img src="images/logo.png" alt="UN" class="logo">
+            </div>
+            <h1 class="site-title">
+                <span class="title-top">Unlikely</span>
+                <span class="title-bottom">Core</span>
+            </h1>
+        </div>
+        <div class="auth-section">
+            <button class="auth-button">Sign Up / Login</button>
+        </div>
+        <div class="nav-icons">
+            <div class="search-container">
+                <button class="icon-link search-toggle"><i class="fas fa-search"></i></button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <button class="icon-link cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+            <button class="icon-link wishlist-icon">
+                <i class="fas fa-heart"></i>
+                <span class="wishlist-count">0</span>
+            </button>
+            <div class="menu-container">
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                <div class="dropdown-menu">
+                    <a href="#" class="menu-item">Home</a>
+                    <a href="#" class="menu-item">Collections</a>
+                    <a href="#" class="menu-item">About Us</a>
+                    <a href="#" class="menu-item">Contact Us</a>
+                    <a href="#" class="menu-item">FAQ</a>
+                    <a href="#" class="menu-item mobile-only">Sign Up / Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="slideshow-container">
+                <div class="slide fade active">
+                    <img src="images/hero1.jpg" alt="Jewelry Collection 1">
+                    <div class="slide-content">
+                        <h2>Handcrafted Excellence</h2>
+                        <p>Discover our unique jewelry pieces</p>
+                        <button class="cta-button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/hero2.jpg" alt="Jewelry Collection 2">
+                    <div class="slide-content">
+                        <h2>Timeless Elegance</h2>
+                        <p>Explore our latest collection</p>
+                        <button class="cta-button">View Collection</button>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/hero3.jpg" alt="Jewelry Collection 3">
+                    <div class="slide-content">
+                        <h2>Luxury Defined</h2>
+                        <p>Experience true craftsmanship</p>
+                        <button class="cta-button">Learn More</button>
+                    </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <button class="slide-nav prev">&#10094;</button>
+                <button class="slide-nav next">&#10095;</button>
+            </div>
+            <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="about-us">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p class="about-initial">
+                    We humbly welcome you to Unlikely Core Jewellery. We are a small-family owned startup trying to build a platform for smart and innovative designers to create stunning breathtaking pieces for our customers. We believe in the fondness of cottage industries and strive to make room for like-minded artists to share their passions. We believe in the likes of sharing and creating art for one another. We strive to maintain a soulful and cultural vibe to our products and a few hands is all we require to deliver the essence of home to your doorsteps.
+                </p>
+                <div class="about-expanded" id="expandedContent">
+                    <p>
+                        As our name suggests, we established the ideals of standing out by highlighting our brand's authenticity. Our tagline, "Jewellery Unlike Any Other" is meant to be eye-catching and grab the attention of onlookers. Our brand name, "Unlikely" promises its customers a unique yet homely shopping experience. We will offer you our humble, most heartfelt designs with the greatest sincerity and hope you enjoy yourself simply by browsing our site.
+                    </p>
+                    <p>
+                        We are utterly grateful for your presence and would like to thank individuals such as yourself for supporting and promoting small self-made businesses like ours. Our time on earth is precious and we are amazed that you have stopped and knocked on our doors to spend a few moments with us. We wish you well, hope you have the unlikeliest shopping spree!
+                    </p>
+                    <img src="images/about-us.png" alt="See you next time!" class="about-image">
+                </div>
+                <button class="read-more-btn" id="readMoreBtn">Read More</button>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section id="collections" class="collections">
+            <h2>Our Collections</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product1a.jpg" alt="Pink Sparkler" class="product-image active" onerror="this.onerror=null; this.src='images/fallback-image.jpg';">
+                            <img src="images/product1b.jpg" alt="Pink Sparkler" class="product-image" onerror="this.onerror=null; this.src='images/fallback-image.jpg';">
+                            <img src="images/product1c.jpg" alt="Pink Sparkler" class="product-image" onerror="this.onerror=null; this.src='images/fallback-image.jpg';">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pink Sparkler</h3>
+                        <p class="product-description">Capture the essence of romance with these delicate blush pink and crystal drop earrings. Its soft feminine hue seeks to intentionally generate a flirtatious sparkle.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_001">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product2a.jpg" alt="Apple of My Eye" class="product-image active">
+                            <img src="images/product2b.jpg" alt="Apple of My Eye" class="product-image">
+                            <img src="images/product2c.jpg" alt="Apple of My Eye" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple of My Eye</h3>
+                        <p class="product-description">Express your love with these captivating earrings. The vibrant red spheres symbolize passion and romance, while the sparkling green crystals add a hint of magic to your outfit.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_002">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product3a.jpg" alt="Coastal Crush" class="product-image active">
+                            <img src="images/product3b.jpg" alt="Coastal Crush" class="product-image">
+                            <img src="images/product3c.jpg" alt="Coastal Crush" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Coastal Crush</h3>
+                        <p class="product-description">Unfold your inner oddities with these ruby red beads, full of life and energy, that sway gracefully alongside iridescent moonstones, creating a mesmerizing dance of light and color.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_003">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product4a.jpg" alt="Comet Cluster" class="product-image active">
+                            <img src="images/product4b.jpg" alt="Comet Cluster" class="product-image">
+                            <img src="images/product4c.jpg" alt="Comet Cluster" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Comet Cluster</h3>
+                        <p class="product-description">Faceted peachy clear crystal beads, stacked for a delicate, light-reflecting sparkle, accented with silver details.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_004">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product5a.jpg" alt="Solar Sonata" class="product-image active">
+                            <img src="images/product5b.jpg" alt="Solar Sonata" class="product-image">
+                            <img src="images/product5c.jpg" alt="Solar Sonata" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Solar Sonata</h3>
+                        <p class="product-description">Golden-yellow crystal beads, arranged in a cascading design for a radiant sparkle. Silver accents add a refined touch.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_005">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product6a.jpg" alt="Lunar Lust" class="product-image active">
+                            <img src="images/product6b.jpg" alt="Lunar Lust" class="product-image">
+                            <img src="images/product6c.jpg" alt="Lunar Lust" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lunar Lust</h3>
+                        <p class="product-description">These earrings feature a bold contrast of glossy black square beads and smooth white spheres, accented with silver details for a modern, minimalist look.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_006">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product7a.jpg" alt="Glacial Gust" class="product-image active">
+                            <img src="images/product7b.jpg" alt="Glacial Gust" class="product-image">
+                            <img src="images/product7c.jpg" alt="Glacial Gust" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Glacial Gust</h3>
+                        <p class="product-description">Teal & icy blue bead earrings featuring a mix of smooth spheres, textured glass, and faceted teardrops for subtle sparkle.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_007">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product8a.jpg" alt="Earthy Echo" class="product-image active">
+                            <img src="images/product8b.jpg" alt="Earthy Echo" class="product-image">
+                            <img src="images/product8c.jpg" alt="Earthy Echo" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Earthy Echo</h3>
+                        <p class="product-description">Polished carnelian spheres, rich and warm, stacked into earthy elegance, capped with ornate silver detail.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_008">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <button class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="image-carousel">
+                            <img src="images/product9a.jpg" alt="Heavenly Harm" class="product-image active">
+                            <img src="images/product9b.jpg" alt="Heavenly Harm" class="product-image">
+                            <img src="images/product9c.jpg" alt="Heavenly Harm" class="product-image">
+                        </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Heavenly Harm</h3>
+                        <p class="product-description">Chunky denim-blue beads get a playful twist with sweet little sky-blue toppers. Smooth and sassy, these earrings transcend a fun pop of color for an everyday look.</p>
+                        <div class="product-price">₹250</div>
+                        <button class="add-to-cart" data-product-id="prod_009">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="contact-us">
+            <h2>Customer Service</h2>
+            <p class="contact-subtitle">Ask us anything!</p>
+            <div class="contact-buttons">
+                <button class="contact-btn call-btn" id="callBtn">
+                    <i class="fas fa-phone"></i>
+                    <span>Call</span>
+                </button>
+                <div class="call-info" id="callInfo">
+                    <div class="call-info-content">
+                        <div class="phone-animation">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Give us a ring</h3>
+                        <div class="availability">
+                            <h4>Availability</h4>
+                            <p>Monday to Saturday</p>
+                            <p>10 am to 6pm IST</p>
+                        </div>
+                        <div class="phone-numbers">
+                            <a href="tel:+918928848570">+91 8928848570</a>
+                            <a href="tel:+919819918904">+91 9819918904</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="contact-btn chat-btn" id="chatBtn">
+                    <i class="fas fa-comments"></i>
+                    <span>Chat</span>
+                </button>
+                <div class="social-popup" id="socialPopup">
+                    <div class="social-popup-content">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <div class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="social-icon pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </div>
+                            <div class="social-icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="contact-btn email-btn" id="emailBtn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </button>
+            </div>
+            <div class="email-popup" id="emailPopup">
+                <div class="email-popup-content">
+                    <h3>Send in your queries</h3>
+                    <div class="email-info">
+                        <a href="mailto:unlikelycore@gmail.com">unlikelycore@gmail.com</a>
+                        <p>Provide Feedback</p>
+                    </div>
+                    <div class="email-animation">
+                        <img src="images/contact-email.png" alt="Contact us" class="email-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the estimated time of delivery for our products?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our standard delivery time is 5-7 business days within India. International shipping may take 10-15 business days depending on the location. Express delivery options are available at checkout.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the return policy for our products?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a 7-day return policy for all our products. Items must be unused and in their original packaging. Contact our customer service team to initiate a return.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How to engage in collaboration and brand deals?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For collaboration and brand deals, please email us at unlikelycore@gmail.com with your proposal. Include your brand details, social media presence, and the type of collaboration you're interested in.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do we provide exchanges?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer exchanges within 7 days of delivery. The item must be unused and in its original condition. Size and style exchanges are subject to availability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How to contact us?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can reach us through multiple channels:<br>
+                        - Email: unlikelycore@gmail.com<br>
+                        - Phone: +91 8928848570<br>
+                        - Social Media: Instagram, Facebook, Pinterest<br>
+                        - WhatsApp: +91 9819918904</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How to sign up?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Click the "Sign Up / Login" button at the top of the page. Fill in your details in the registration form. Once registered, you can access your account, track orders, and save your favorites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Modal Template -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="product-details">
+                <!-- Product details will be populated via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modals -->
+    <div id="loginModal" class="auth-modal">
+        <div class="auth-modal-content">
+            <span class="close-auth">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="auth-submit">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="auth-modal">
+        <div class="auth-modal-content">
+            <span class="close-auth">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit" class="auth-submit">Sign Up</button>
+                <p class="auth-switch">Already have an account? <a href="#" id="showLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-content">
+                <!-- Cart items will be dynamically populated here -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <p class="empty-cart-subtitle">Looks like you haven't added anything to your cart yet.</p>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-subtotal">
+                    <span>Total:</span>
+                    <span id="cartTotal">₹0</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    <i class="fas fa-lock"></i>
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlistModal" class="wishlist-modal">
+        <div class="wishlist-modal-content">
+            <span class="close-wishlist">&times;</span>
+            <h2>My Wishlist</h2>
+            <div id="wishlistItems" class="wishlist-items">
+                <!-- Wishlist items will be added here dynamically -->
+            </div>
+            <div class="wishlist-actions">
+                <button id="clearWishlistBtn" class="clear-wishlist-btn">Clear Wishlist</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <img src="images/logo.png" alt="UN" class="footer-logo">
+                <h2>Unlikely Core</h2>
+                <p class="jewellery">Jewellery</p>
+                <div class="divider"></div>
+                <p class="tagline">"Find Jewellery Unlike Any Other!"</p>
+                <p class="rights">All rights reserved</p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-icons">
+                        <div class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-icon pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </div>
+                        <div class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>GET IN TOUCH</h3>
+                    <a href="mailto:unlikelycore@gmail.com" class="contact-email">unlikelycore@gmail.com</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>JOB OPPORTUNITIES</h3>
+                    <p class="job-text">
+                        Experienced media professionals and social media collaborators are welcome to send in their resumes along with their artist portfolios at the above mentioned email address. We will make sure to respond aptly to all your applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright-text"> 2025 Unlikely Core | Website created by Theo Agnel | Designed by Christina D'Cruz | Powered by Github</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    let currentIndex = 0;
+
+    function changeImage(direction) {
+        const container = event.target.closest('.product-image-container');
+        const images = container.querySelectorAll('.product-image');
+        let currentIndex = 0;
+        
+        // Find current image index
+        images.forEach((img, index) => {
+            if (img.classList.contains('active')) {
+                currentIndex = index;
+            }
+        });
+        
+        // Remove active class from current image
+        images[currentIndex].classList.remove('active');
+        
+        // Calculate new index based on direction and wrap around if needed
+        currentIndex = (currentIndex + direction + images.length) % images.length;
+        
+        // Add active class to new image
+        images[currentIndex].classList.add('active');
+    }
+
+    function toggleWishlistItem(button) {
+        button.classList.toggle('active');
+        // You can add additional logic here to handle wishlist functionality
+    }
+    </script>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-content">
+                <!-- Cart items will be dynamically populated here -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <p class="empty-cart-subtitle">Looks like you haven't added anything to your cart yet.</p>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-subtotal">
+                    <span>Total:</span>
+                    <span id="cartTotal">₹0</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    <i class="fas fa-lock"></i>
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

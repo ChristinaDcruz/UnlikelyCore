@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - Unlikely Core Jewellery</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="sticky"> <!-- Added sticky class -->
+        <div class="header-black"></div>
+        <div class="header-red"></div>
+        <div class="logo-section">
+            <div class="logo-circle">
+                <img src="images/logo.png" alt="Unlikely Core Logo" class="logo">
+            </div>
+            <a href="/" aria-label="Unlikely Core Homepage" class="site-title">
+                <span class="title-top">Unlikely</span>
+                <span class="title-bottom">Core</span>
+            </a>
+        </div>
+        <div class="auth-section">
+            <a href="auth.html" class="auth-button">Sign Up / Login</a>
+        </div>
+        <div class="nav-icons">
+            <div class="search-container">
+                <button class="icon-link search-toggle" aria-label="Toggle Search"><i class="fas fa-search"></i></button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for jewellery..." aria-label="Search products">
+                    <button class="search-close" aria-label="Close Search"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <a href="cart.html" class="icon-link cart-icon" aria-label="View Shopping Cart">
+                <span class="cart-count">0</span>
+            </a>
+            <a href="wishlist.html" class="icon-link wishlist-icon active" aria-label="View Wishlist"> <!-- Added active class to wishlist icon -->
+                <i class="fas fa-heart"></i>
+                <span class="wishlist-count">0</span>
+            </a>
+            <div class="menu-container">
+                <button class="menu-toggle" aria-label="Toggle Navigation Menu"><i class="fas fa-bars"></i></button>
+                <nav class="dropdown-menu">
+                    <a href="/" class="menu-item">Home</a>
+                    <a href="index.html#collections" class="menu-item">Collections</a>
+                    <a href="index.html#about-us" class="menu-item">About Us</a>
+                    <a href="index.html#contact-us" class="menu-item">Contact Us</a>
+                    <a href="index.html#faq-section" class="menu-item">FAQ</a>
+                    <a href="auth.html" class="menu-item mobile-only">Sign Up / Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="wishlist-page">
+        <!-- Wishlist Modal Content Directly Here -->
+        <div id="wishlistModal" class="wishlist-modal active"> <!-- Modal is always active on this page -->
+            <div class="wishlist-modal-content">
+                <div class="wishlist-header">
+                    <h2>My Wishlist</h2>
+                    <a href="index.html" class="close-wishlist" id="closeWishlist" aria-label="Close Wishlist"> <!-- Link back to homepage -->
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+                <div id="wishlistItems" class="wishlist-content wishlist-items"> <!-- Added wishlist-content class -->
+                    <!-- Wishlist items will be added here dynamically by JavaScript -->
+                    <div class="empty-wishlist">
+                        <i class="fas fa-heart"></i>
+                        <p>Your wishlist is empty</p>
+                        <p class="empty-wishlist-subtitle">Looks like you haven't added anything to your wishlist yet.</p>
+                    </div>
+                </div>
+                <div class="wishlist-actions">
+                    <button id="clearWishlistBtn" class="clear-wishlist-btn">Clear Wishlist</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer Content - Same as index.html -->
+        <div class="footer-content">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <a href="/" aria-label="Unlikely Core Homepage Footer">
+                    <img src="images/logo.png" alt="Unlikely Core" class="footer-logo">
+                </a>
+                <h2>Unlikely Core</h2>
+                <p class="jewellery">Jewellery</p>
+                <div class="divider"></div>
+                <p class="tagline">"Find Jewellery Unlike Any Other!"</p>
+                <p class="rights">© 2025 Unlikely Core. All rights reserved</p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-icons">  <!-- Social Icons moved below "FOLLOW US" -->
+                        <a href="https://www.instagram.com/unlike_lycore/" target="_blank" rel="noopener" aria-label="Follow us on Instagram" class="social-icon instagram"> <!-- Updated Instagram Link -->
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Pinterest" class="social-icon pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://www.facebook.com/unlikelycore" target="_blank" rel="noopener" aria-label="Follow us on Facebook" class="social-icon facebook"> <!-- Updated Facebook Link -->
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>GET IN TOUCH</h3>
+                    <a href="mailto:unlikelycore@gmail.com" class="contact-email">unlikelycore@gmail.com</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>JOB OPPORTUNITIES</h3>
+                    <p class="job-text">
+                        Experienced media professionals and social media collaborators are welcome to send in their resumes along with their artist portfolios at the above mentioned email address. We will make sure to respond aptly to all your applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright-text"> 2025 Unlikely Core | Website created by Theo Agnel | Designed by Christina D'Cruz | Powered by Github</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
